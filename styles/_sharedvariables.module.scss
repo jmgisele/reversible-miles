@@ -1,0 +1,27 @@
+// layout variables
+$layout_breakpoint: 800px;
+
+//color variables - custom
+$desktop_background_color: #f5f5f5;
+
+//color variables - MUI
+$color_50: #fff3e0;
+$color_100: #ffe0b2;
+$color_200: #ffcc80;
+$color_300: #ffb74d;
+$color_400: #ffa726;
+$color_500: #ff9800;
+$color_600: #fb8c00;
+$color_700: #f57c00;
+$color_800: #ef6c00;
+$color_900: #e65100;
+
+$color_a100: #ffd180;
+$color_a200: #ffab40;
+$color_a400: #ff9100;
+$color_a700: #ff6d00;
+
+// JS exports
+:export {
+  layoutBreakpoint: $layout_breakpoint;
+}

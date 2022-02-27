@@ -1,0 +1,66 @@
+@use '../../styles/sharedvariables.module' as global;
+
+$nav_height: 200px;
+$navlinks_height: 4rem;
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: $nav_height;
+  background-color: global.$color_400;
+  width: 100vw;
+  overflow-y: visible;
+}
+
+.navLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: $navlinks_height;
+  width: 100vw;
+  background-color: global.$color_200;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  color: global.$color_50;
+  background-color: global.$color_200;
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin: 0rem 0.2rem;
+  width: 8rem;
+  height: $navlinks_height;
+}
+
+.navLink:focus {
+  outline: 3px solid global.$color_900;
+  z-index: 1;
+}
+
+.navLink:hover {
+  background-color: global.$color_300;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+}
+
+.dropDown {
+  background-color: global.$color_200;
+  text-align: left;
+  padding: 0rem;
+}
+
+.logoContainerDesktop {
+  margin: auto 0rem;
+}
